@@ -1,0 +1,239 @@
+    body {
+        font-size: 14px;
+        font-family: 'Khula', sans-serif;
+        margin: 0;
+		color: #fff;
+        padding: 0;
+		transition: background 1s ease;
+		background-color: #FF5647;
+		font-family: 'Didact Gothic', sans-serif;
+    }
+	
+	ul {
+		list-style-type: none;
+		padding-left:0;
+	}
+	
+	a {
+	    text-decoration: none;
+        color: black;		
+	}
+
+	.slide-2 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	 h1 {
+		font-size: 1rem;
+	}
+
+     @media screen and (min-width: 398px) {
+            .appstore {
+            	width: 40%; 
+            	height: 10%; 
+            	position: absolute; 
+            	top: 0;
+		        left: 0;
+		        right: 0;
+		        bottom: 0;
+		        margin: auto;
+		        margin-bottom: 0;
+            }
+
+            .img-container {
+		      position: absolute;
+		      width: 100%;
+		      height: 70%;
+		      top: 10%;
+		      left: 0;
+		      right: 0;
+		      bottom: 0;
+		      margin: auto;
+		      z-index: 997;
+		      text-align: center;
+	    }
+
+	    .left-container {
+              position: absolute;
+              left: 0;
+              right: 0;
+              top: 0;
+              bottom: 0;
+              margin: auto;
+              margin-left: 0;
+              height: 100%;
+              width: 25%;
+        }
+
+        .right-container {
+              position: absolute;
+              left: 0;
+              right: 0;
+              top: 0;
+              bottom: 0;
+              margin: auto;
+              margin-right: 0;
+              height: 100%;
+              width: 25%;
+        }
+
+        .inner-img-container {
+		      display: block;
+		      margin: 0;
+		      padding: 0;
+		      width: 90%;
+		      height: 30%;
+		      text-align: center;
+	   }
+
+	   h1 {
+	   	      margin: 0;
+	   	      margin-top: -40%;
+	   }
+
+	   .text-container {
+	   	display: none;
+	   }
+     }
+
+
+	 @media screen and (min-width: 768px) {
+            .appstore {
+            	width: 15%; 
+            	height: 10%; 
+            	position: absolute; 
+            	top: 0;
+		        left: 0;
+		        right: 0;
+		        bottom: 0;
+		        margin: auto;
+		        margin-bottom: 1%;
+		        margin-left: 2%;
+            }
+
+            .left-container {
+              position: absolute;
+              left: 0;
+              right: 0;
+              top: 0;
+              bottom: 0;
+              margin: auto;
+              margin-left: 0;
+              height: 100%;
+              width: 42.5%;
+        }
+
+            .right-container {
+              position: absolute;
+              left: 0;
+              right: 0;
+              top: 0;
+              bottom: 0;
+              margin: auto;
+              margin-right: 0;
+              height: 100%;
+              width: 42.5%;
+        }
+
+        	 .inner-img-container {
+		      display: inline-block;
+		      margin: 0;
+		      padding: 0;
+		      width: 30%;
+		      height: 100%;
+		      text-align: center;
+	    }
+
+	         .img-container {
+		      position: absolute;
+		      width: 100%;
+		      height: 20%;
+		      top: 15%;
+		      left: 0;
+		      right: 0;
+		      bottom: 0;
+		      margin: auto;
+		      z-index: 997;
+		      text-align: center;
+	   }
+
+	   	     .text-container {
+	   	      display: inline;
+		      width: 90%;
+		      position: absolute;
+		      height: 30%;
+		      top: 0;
+	          left: 0;
+	          right: 0;
+	          bottom: 0;
+	          margin: auto;
+	          margin-top: 15%;
+	          text-align: center;
+	          font-size: 1.5rem;
+	  }
+
+             .text-left {
+             	position: absolute;
+             	height: 100%;
+             	width: 35%;
+             	left: 0;
+             }
+
+             .text-right {
+             	position: absolute;
+             	height: 100%;
+             	width: 35%;
+             	right: 0;
+             }
+
+             	   h1 {
+	   	      margin: auto;
+	   	      font-size: 1.5rem;
+	   }
+
+             .text-container .header {
+             	font-size: 2.5rem;
+             }
+     }
+
+	.customize {
+		background: url("../img/schedule.png") no-repeat center;
+		background-size: contain;
+		min-height: 100%;
+	}
+
+	.import {
+		background: url("../img/import.png") no-repeat center;
+		background-size: contain;
+		min-height: 100%;
+	}
+
+
+	.timeline {
+		background: url("../img/timeline.png") no-repeat center;
+		background-size: contain;
+		min-height: 100%;
+	}
+
+	.exam {
+		background: url("../img/exam.png") no-repeat center;
+		background-size: contain;
+		min-height: 100%;
+	}
+
+
+	.round {
+		margin: 15%;
+	}
+
+	.round:hover {
+        -webkit-filter: drop-shadow(5px 5px 5px #fff8c7);
+        filter:         drop-shadow(5px 5px 5px #fff8c7); 
+	}
+
+
+	

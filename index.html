@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+    <title>This is Schedule Hero!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  	<link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+</head>
+
+<body>
+   <div class="appstore">
+      <img src="./img/appstore.png"
+	         class="appstore-img"
+		       style="width: 100%; height: auto;">
+   </div>
+
+   <!--Initially hidden at intro page-->
+   <div class="iphone">
+	    <img src="./img/iphone6.png" 
+			     class="iphone-img"
+		       style="height: 75%; width:auto; position:absolute; z-index:999; right:0;left:0;margin-right:auto;margin-left: auto; top:15%;">
+   </div>
+
+   <div class="logo"
+        style="height: 15%; width:auto; position:fixed; z-index:999; top:2%; left:2%;display: table-cell; vertical-align: middle; margin: 0;"
+   >
+      <img src="./img/scheduleHero.png" 
+           class="logo-img"
+           style="height:120%; width:auto; ">
+   </div>
+
+   <div class="author"
+        style="position: absolute; left: 0; right: 0; top: 0; bottom:0; margin: auto; margin-bottom: 0; margin-right: 0; font-size: 0.6rem; width: 30%; height: 5%;
+          text-align: center; color: #ffcb55;"
+   >Website made with <span style="text-decoration: line-through;">coffee</span>code by Yujia Cao</div>
+
+      <div class="swiper-slide slide-2">
+			   <div class="detail-overlay"
+			        style="display: none;">
+			   </div>
+
+          <div class="text-container"> 
+            <div class="text-left">
+              <div class="header">This is Schedule Hero!</div>
+              <div class="description1">Schedule Hero is designed to provide better user experience with schedules for UW students.</div>
+            </div>
+            <div class="text-right">
+              <div class="description2">With Schedule Hero, you can import schedule directly from Quest, add/drop classes and view course/exam details anytime. </div>
+            </div>
+          </div>
+
+          <div class="img-container">
+            <div class="left-container">
+                <div class="inner-img-container">					
+                    <div class="customize round"></div>
+				            <h1>CUSTOMIZE</br>SCHEDULE</h1>
+				        </div>
+                <div class="inner-img-container">
+                     <div class="timeline round"></div>
+                     <h1>VIEW</br>TIMELINE</h1>
+                </div>
+             </div>
+
+             <div class="right-container">
+              <div class="inner-img-container">         
+                    <div class="import round"></div>
+                    <h1>IMPORT</br>SCHEDULE</h1>
+                </div>
+                <div class="inner-img-container">
+                     <div class="exam round"></div>
+                     <h1>CHECK EXAM</br>SEATING</h1>
+                </div>
+            </div>
+
+            </div>
+          </div>
+      </div>
+
+   <!--Scripts-->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="./js/swiper/js/swiper.jquery.js"></script>
+   <script src="./js/swiper/js/swiper.jquery.min.js"></script>
+   <!--Initialize Swiper-->
+   <script>        
+      var mySwiper1 = new Swiper ('.swiper-container-v', {
+       direction: 'vertical',
+       pagination: '.swiper-pagination-v',
+	   slidesPerView: 1,
+       paginationClickable: true,
+       spaceBetween: 0,
+	   speed: 500,
+       mousewheelControl: true,
+	   simulateTouch: false,
+	   parallax: true,
+     });	 
+	 
+   </script>
+</body>
+</html> 
