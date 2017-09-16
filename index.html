@@ -102,8 +102,8 @@
    <!--Scripts-->
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
    <script type="text/javascript">
-     (function blink() { 
-  $('.click').fadeOut(500).fadeIn(500, blink); 
+    (function blink(){ 
+     $('.click').fadeOut(500).fadeIn(500, blink); 
     })();
 
     $(function(){
@@ -111,7 +111,8 @@
     image.src ='./img/gif.gif';
     $('.app-gif').click(function(){
        $(this).attr('src',image.src);
-       $('.click').stop(true,true).hide();
+       //$('.click').stop(true,true).fadeOut('fast');
+       $('.click').remove();
     });
 });
    </script>
