@@ -6,6 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
   	<link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-104932571-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments)};
+      gtag('js', new Date());
+
+      gtag('config', 'UA-104932571-3');
+    </script>
+
+
 </head>
 
 <body>
@@ -14,16 +25,17 @@
       style="z-index: 999">
       <img src="./img/appstore.png"
 	         class="appstore-img"
-		       style="width: 100%; height: auto;">
+		       style="width: 100%; height: auto; z-index: 998;">
    </a>
 
    <!--Initially hidden at intro page-->
    <div class="iphone">
 	    <img src="./img/6.png" 
 			     class="iphone-img"
-		       style="height: 75%; width:auto; position:absolute; z-index:999; right:0;left:0;margin-right:auto;margin-left: auto; top:15%;">
-      <img src="./img/gif.gif" 
-           style="height: 52.5%; width:auto; position:absolute; z-index:999; right:0;left:0;margin-right:auto;margin-left: auto; top:25%;"/>
+		       style="height: 90%; width:auto; position:absolute; right:0;left:0;margin-right:auto;margin-left: auto; top:8.5%; z-index: 998;">
+      <img src="./img/startpage.jpg" 
+           class="app-gif"
+           style="height: 64%; width:auto; position:absolute; right:0;left:0;margin-right:auto;margin-left: auto; top:18.5%; z-index: 998;"/>
    </div>
 
    <div class="logo"
@@ -34,8 +46,14 @@
            style="height:120%; width:auto; ">
    </div>
 
+   <div class="click"
+        style="height: 10%; width:15%; position:absolute; right:0;left:0;margin-right:auto;margin-left: auto; top:50%; z-index: 999;
+          text-align: center; color: #ff5647; font-size: 1.2rem;">
+     <img src="./img/arrow.png" style="width: 40px; height: auto;" />
+   </div>
+
    <div class="author"
-        style="position: absolute; left: 0; right: 0; top: 0; bottom:0; margin: auto; margin-bottom: 0; margin-right: 0; font-size: 0.6rem; width: 30%; height: 5%;
+        style="position: absolute; left: 0; right: 0; top: 0; bottom:0; margin: auto; margin-bottom: 1%; margin-right: 0; font-size: 0.6rem; width: 35%; height: 5%;
           text-align: center; color: #ffcb55;"
    >Website made with <span style="text-decoration: line-through;">coffee</span>code by Yujia Cao</div>
 
@@ -83,5 +101,19 @@
 
    <!--Scripts-->
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script type="text/javascript">
+     (function blink() { 
+  $('.click').fadeOut(500).fadeIn(500, blink); 
+    })();
+
+    $(function(){
+    var image = new Image();
+    image.src ='./img/gif.gif';
+    $('.app-gif').click(function(){
+       $(this).attr('src',image.src);
+       $('.click').stop(true,true).hide();
+    });
+});
+   </script>
 </body>
 </html> 
